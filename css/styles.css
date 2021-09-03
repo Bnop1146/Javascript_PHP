@@ -75,3 +75,22 @@ body {
     background-color: indianred;
     color: white;
 }
+
+
+
+.btn1 {
+    font-family: "proxima nova", serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    border: solid 2px darkblue;
+    border-radius: 20px;
+    padding: 2px 10px;
+
+}
+
+.btn1:hover {
+    background-color: darkblue;
+    color: white;
+}
