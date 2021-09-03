@@ -1,0 +1,89 @@
+* { /* Gælder alt på hele siden */
+    box-sizing: border-box; /* Bokse har altid den størrelse man giver uanset om der tilføjes margen, padding mv. */
+}
+
+/* Ovenstående kode kan give problemer ved nogle 3. parts scripts man henter. Men det gør det nemmere at forstå og lave kodning når man starter. */
+
+body {
+    margin: 0; /* Ingen kanter i siden af browser */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Ingen ydre margen fra overskrifter */
+    padding: 0; /* Ingen indre margen fra overskrifter */
+}
+
+ul, ol {
+    margin: 2px 10px 2px 10px; /* Mindre margen på punkter */
+    padding: 0; /* Ingen indre margen fra lister */
+    list-style-position: inside; /* List punkter står på linje */
+}
+
+li {
+    margin: 0; /* Ingen ydre margen fra listpunkter */
+}
+
+p {
+    margin: 0; /* Ingen ydre margen fra paragraffer */
+    padding: 0; /* Ingen indre margen fra paragraffer */
+}
+
+/* Sikrer billeder er responsive */
+img {
+    display: block; /* Billeder er et element (laver linjeskift) */
+    max-width: 100%; /* Bredde må maks fylde 100% */
+    height: auto; /* Højden skal tilpasse sig */
+}
+
+
+html {
+    font-size: 10px;
+    background: url("../images/background.jpg") bottom center;
+    background-size: cover;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+}
